@@ -22,30 +22,7 @@ public class IfDemo {
 		
 		String classification = obj.classifyPassengers(age);
 		System.out.println("Passenger class " + classification );
-		
-		obj.allotBerth(classification);
-		
 		sc.close();
-	}
-	
-	public void allotBerth(String classification) {
-		switch(classification) {
-			case "CHILD":
-				System.out.println("LB"); 
-				break; 
-			case "ADULT":
-				System.out.println("UB,MB");
-				break; 
-			case "MIDDLE_AGE":
-				System.out.println("SL, SU, LB");
-				break;
-			case "SENIOR":
-				System.out.println("LB"); 
-				break;
-			default: 
-				System.out.println("Invalid class..."); 
-				break;
-		}
 	}
 	
 	public String classifyPassengers(int age){

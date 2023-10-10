@@ -22,9 +22,6 @@ public class IfDemo {
 		
 		String classification = obj.classifyPassengers(age);
 		System.out.println("Passenger class " + classification );
-		
-		obj.allotBerth(classification);
-		
 		sc.close();
 	}
 	
