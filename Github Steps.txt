@@ -55,3 +55,25 @@ git commit -m "updated file"
 git push origin main 
 
 After the push, You will be able to see updated content in myFile.txt in your remote git. 
+
+Creating a branch remotely and adding a file in it. 
+
+1. git checkout -b "code-branch"
+
+2. Create a text file and write something init. 
+
+notepad myJavaCode.java
+
+3. add this to local repo 
+
+git add myJavaCode.java
+
+4. Commit this using following command
+
+git commit -m "coding file"
+
+5.  push this file to remote git by using following command: 
+
+git push origin code-branch 
+
+Once done with the branch, go to main 
