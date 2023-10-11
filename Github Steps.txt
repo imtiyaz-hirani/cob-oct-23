@@ -1,0 +1,57 @@
+Github Steps
+=============
+
+1. Sing up to github and verify email 
+2. Login to github and create a repository 
+
+name: my-repo
+access: public 
+
+3. In your system create any folder and open command promth in that folder
+
+4. Connect local to remote repo using following command: 
+
+git clone <github-url>
+
+After cloning, it creates a my-repo folder for you. 
+ 
+5. Create a file myFile.txt in this my-repo folder 
+
+6. navigate from command propt into my-repo folder and type following command
+
+C:\New folder (2)>cd my-repo
+
+C:\New folder (2)\my-repo> 
+
+7. Add file myFile.txt to local git
+
+C:\New folder (2)\my-repo>git add myFile.txt
+
+8. Commit this using following command
+
+git commit -m "my first file for git"
+
+9. push this file to remote git by using following command: 
+
+git push origin main 
+
+10. Go to remote git and check weather the file muFile.txt is present? YES
+
+
+Update the existing files and push to git. 
+
+1. Make changes to exiting file(s). 
+
+2. 7. Add file myFile.txt to local git
+
+git add myFile.txt
+
+3. Commit this using following command
+
+git commit -m "updated file"
+
+4. push this file to remote git by using following command: 
+
+git push origin main 
+
+After the push, You will be able to see updated content in myFile.txt in your remote git. 
