@@ -5,7 +5,7 @@ import java.util.Scanner;
 import com.service.RailwayService;
 
 public class IfDemo {
-	public static void main(String[] args) { //break till 5PM 
+	public static void main(String[] args) {  
 		RailwayService obj = new RailwayService();
 		Scanner sc = new Scanner(System.in);
 		

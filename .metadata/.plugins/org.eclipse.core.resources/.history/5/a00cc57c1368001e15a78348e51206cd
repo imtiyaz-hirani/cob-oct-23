@@ -1,0 +1,21 @@
+package com.service;
+
+public class ResultService {
+
+	public double computeTotalMarksScored(double marksMaths, double marksScience, double marksHistory) {
+		//add the marks of 3 subjects and return the sum 
+		double sum = marksMaths + marksScience + marksHistory;
+		return sum;
+	}
+
+	public double computePercentage(double totalMarksScored, double totalMarks) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public String computeGrade(double percent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
