@@ -23,6 +23,15 @@ public class LoopDemo {
 				System.out.print(i + " "); //2 4 6 8 10
 			}
 		}
+		
+		System.out.println("");
+		/* While Loop */
+		/* Display number from 1 to 5 */
+		int j=1; 
+		while(j<=5) {
+			System.out.print(j + " "); //1 2 3 4 5
+			j++;
+		}
 	}
 
 }
