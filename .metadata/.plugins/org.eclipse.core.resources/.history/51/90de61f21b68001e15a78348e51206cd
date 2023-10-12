@@ -1,0 +1,48 @@
+package com.controller;
+
+import java.util.Scanner;
+
+public class BankKiosk {
+
+	public static void main(String[] args) {
+		 Scanner sc = new Scanner(System.in);
+		 /* Take name as input from user/console */
+		 System.out.println("Enter your name");
+		 String name = sc.next();
+		 
+		 System.out.println("welcome " + name);
+		 
+		 System.out.println("**********Services**************");
+		 System.out.println("1. Info about New Account ");
+		 System.out.println("2. Info about FD & RD");
+		 System.out.println("3. Info about Mutual Funds and SIPs");
+		 System.out.println("4. Register complaint");
+		 System.out.println("0. Exit");
+		 System.out.println("********************************");
+		 int input = sc.nextInt();
+		 
+		 switch(input) {
+		 case 1: 
+			 //do something
+			 System.out.println("Info about New Account");
+			 break; 
+		 case 2: 
+			 //do something
+			 System.out.println("Info about FD & RD\"");
+			 break; 
+		 case 3: 
+			 //do something
+			 System.out.println("Info about Mutual Funds and SIPs");
+			 break; 
+		 case 4: 
+			 //do something
+			 System.out.println("Register complaint");
+			 break; 
+		 default: 
+			//do something
+			 System.out.println("Invalid Input");
+			 break;  
+		 }
+	}
+
+}

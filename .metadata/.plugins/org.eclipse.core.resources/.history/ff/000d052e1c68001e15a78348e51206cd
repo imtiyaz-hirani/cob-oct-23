@@ -23,35 +23,13 @@ public class BankKiosk {
 			 int input = sc.nextInt();
 			 if(input == 0) {
 				 System.out.println("Thank you " + name);
-				 System.out.println("Have a nice day");
+				 System.out.println("Have a nice days");
 				 break; //come out of the while loop 
 			 }
 			 switch(input) {
 			 case 1: 
 				 //do something
-				 while(true) {
-					 System.out.println("***Info about New Account***");
-					 System.out.println("1. Info about Savings");
-					 System.out.println("2. Info about Current");
-					 System.out.println("0. go back to Services menu");
-					 System.out.println("****************************");
-					 int in1 = sc.nextInt();
-					 if(in1 == 0) {
-						 break; 
-					 }
-					 switch(in1) {
-					 case 1:
-						 System.out.println("Saving ROI is 6% pa");
-						 break; 
-					 case 2: 
-						 System.out.println("Current ROI is 0% pa");
-						 break;
-					 default: 
-						 System.out.println("Invalid optional selected..");
-						 break; 
-					 }
-				 }
-				 
+				 System.out.println("Info about New Account");
 				 break; 
 			 case 2: 
 				 //do something
@@ -71,8 +49,6 @@ public class BankKiosk {
 				 break;  
 			 }
 		 }
-		 
-		 sc.close();
 	}
 
 }

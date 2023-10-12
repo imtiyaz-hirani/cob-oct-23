@@ -39,17 +39,6 @@ public class BankKiosk {
 					 if(in1 == 0) {
 						 break; 
 					 }
-					 switch(in1) {
-					 case 1:
-						 System.out.println("Saving ROI is 6% pa");
-						 break; 
-					 case 2: 
-						 System.out.println("Current ROI is 0% pa");
-						 break;
-					 default: 
-						 System.out.println("Invalid optional selected..");
-						 break; 
-					 }
 				 }
 				 
 				 break; 
@@ -71,8 +60,6 @@ public class BankKiosk {
 				 break;  
 			 }
 		 }
-		 
-		 sc.close();
 	}
 
 }
