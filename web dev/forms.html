@@ -20,8 +20,36 @@
                 else{
                     working_professional="Not given";
                 }
-
                  console.log("Working Professional?: " + working_professional)
+
+
+                 console.log('Languages Selected: ');
+                 let languages=[]; 
+                if(document.getElementById("java_box").checked == true){
+                    languages.push("java"); 
+                    console.log("java");
+                } 
+                if(document.getElementById("python_box").checked == true){
+                    languages.push("python"); 
+                    console.log("python");
+                } 
+                if(document.getElementById("angular_box").checked == true){
+                    languages.push("angular"); 
+                    console.log("angular");
+                } 
+
+                let city = document.getElementById("city").value;
+                console.log("city given: " + city);
+
+                let userInfo = {
+                    "name":name,
+                    "email": email,
+                    "password": password,
+                    "working_professional" : working_professional,
+                    "languages": languages,
+                    "city": city
+                }
+                console.log(userInfo)
 
             }
         </script>
@@ -45,16 +73,16 @@
             <br><br>
             <label>Which Languages are you versed with? </label>
             <br>
-            <input type="checkbox"> Java <br>
-            <input type="checkbox"> Python <br>
-            <input type="checkbox"> Angular  
+            <input type="checkbox" id="java_box" value="java"> Java <br>
+            <input type="checkbox" id="python_box" value="python"> Python <br>
+            <input type="checkbox" id="angular_box" value="angular"> Angular  
             <br><br>
             <label>Select your City </label>   
-            <select>
+            <select id="city">
                 <option>---select---</option>
-                <option>Mumbai</option>
-                <option>Delhi</option>
-                <option>Pune</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="pune">Pune</option>
             </select>
             <br><br>
             <input type="submit" value="SignUp">
