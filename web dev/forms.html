@@ -1,20 +1,47 @@
 <htmL>
+    <head>
+        <script>
+            function signUp(){
+                let name = document.getElementById("emp_name").value;
+                console.log("Name is: " + name)
+                let email = document.getElementById("emp_email").value;
+                console.log("Email is: " + email)
+                let password = document.getElementById("emp_password").value;
+                console.log("Password is: " + password)
+
+                let working_professional ="";
+                if(document.getElementById("working_professional_yes").checked){
+                    working_professional="yes";
+                }
+                else
+                if(document.getElementById("working_professional_no").checked){
+                    working_professional="no";
+                }
+                else{
+                    working_professional="Not given";
+                }
+
+                 console.log("Working Professional?: " + working_professional)
+
+            }
+        </script>
+    </head>
     <body>
         <h3>Sign Up</h3>
-        <form>
+        <form onsubmit="signUp()" action="Javascript:void">
             <label>Name: </label>
-            <input type="text" name="emp_name">
+            <input type="text" name="emp_name" id="emp_name" required>
             <br><br>
             <label>Email: </label>
-            <input type="text" name="emp_email">
+            <input type="email" name="emp_email" id="emp_email" required>
             <br><br>
             <label>Password: </label>
-            <input type="password" name="emp_password"> <!-- masking-->
+            <input type="password" name="emp_password" id="emp_password" required> <!-- masking-->
             <br><br>
             <label>Are you a working professional? </label>
             <br>
-            <input type="radio" name="working_professional"> YES &nbsp;&nbsp;
-            <input type="radio" name="working_professional"> NO
+            <input type="radio" name="working_professional" id="working_professional_yes" value="yes" > YES &nbsp;&nbsp;
+            <input type="radio" name="working_professional" id="working_professional_no" value="no"> NO
             <br><br>
             <label>Which Languages are you versed with? </label>
             <br>
@@ -34,3 +61,10 @@
         </form>
     </body>
 </htmL>
+
+<!-- 
+    Event Handlers
+    --------------
+    onClick() / onclick()
+    onsubmit() : for forms
+-->
