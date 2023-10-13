@@ -50,13 +50,14 @@
                     "city": city
                 }
                 console.log(userInfo)
-
+                localStorage.setItem("email",email);
+                localStorage.setItem("password",password);
             }
         </script>
     </head>
     <body>
         <h3>Sign Up</h3>
-        <form onsubmit="signUp()" action="Javascript:void">
+        <form onsubmit="signUp()" action="login.html">
             <label>Name: </label>
             <input type="text" name="emp_name" id="emp_name" required>
             <br><br>
